@@ -8,4 +8,26 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="LoginMainStyle">
+        <item name="android:paddingRight">130dp</item>
+        <item name="android:paddingLeft">130dp</item>
+        <item name="android:paddingTop">160dp</item>
+
+    </style>
+
+    <style name ="loginElement" >
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+
+    </style>
+
+    <style name="LoginSecondary" parent ="loginElement">
+        <item name="android:fontFamily">@font/</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+
+
 </resources>
