@@ -18,7 +18,6 @@
         <TextView
             style="@style/LoginElementSecondary"
             android:id="@+id/loginLabel"
-
             android:text="@string/login" />
 
         <EditText
@@ -43,7 +42,7 @@
             android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/signInButton"
             style="@style/LoginElementSecondary"
             android:layout_below="@id/inputPassword"
             android:text="@string/buttonLabel"
