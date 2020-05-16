@@ -15,5 +15,5 @@ class Login : AppCompatActivity() {
        // while(check)
     }
 
-    fun checkCredintalsStatus() : Boolean = inputLogin.text.isEmpty() && inputPassword.text.isEmpty()
+    fun checkCredentialsStatus() : Boolean = inputLogin.text.isEmpty() && inputPassword.text.isEmpty()
  }
