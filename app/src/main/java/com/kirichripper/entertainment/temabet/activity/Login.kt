@@ -12,8 +12,7 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-       // while(check)
     }
 
-    fun checkCredintalsStatus() : Boolean = inputLogin.text.isEmpty() && inputPassword.text.isEmpty()
+    val CredintalsStatus() = inputLogin.text.isEmpty() && inputPassword.text.isEmpty()
  }
