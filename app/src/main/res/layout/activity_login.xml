@@ -48,7 +48,8 @@
             android:layout_height="100dp"
             android:layout_width="150dp"
             android:background="@drawable/login_button"
-            android:textColor="@color/buttonText"/>
+            android:textColor="@color/buttonText"
+            android:onClick="login"/>
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

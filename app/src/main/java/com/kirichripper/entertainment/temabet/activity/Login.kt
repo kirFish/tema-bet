@@ -15,4 +15,8 @@ class Login : AppCompatActivity() {
     }
 
     val CredintalsStatus = inputLogin.text.isEmpty() && inputPassword.text.isEmpty();
+
+    fun login(view: android.view.View) {
+        
+    }
  }
