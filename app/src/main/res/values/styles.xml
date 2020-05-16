@@ -8,25 +8,28 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--All the elements on the first screen-->
     <style name="LoginMainStyle">
-        <item name="android:paddingRight">130dp</item>
-        <item name="android:paddingLeft">130dp</item>
-        <item name="android:paddingTop">160dp</item>
-
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:fontFamily">@font/cuprum_bold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_margin">10dp</item>
     </style>
 
-    <style name ="loginElement" >
+    <!-- EditText on the first activity-->
+    <style name ="loginElementPrimary" parent = "LoginMainStyle">
         <item name="android:padding">15dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
-
+<!--        <item name="android:cacheColorHint">@color/editTextWrong</item>-->
     </style>
 
-    <style name="LoginSecondary" parent ="loginElement">
-        <item name="android:fontFamily">@font/</item>
-        <item name="android:textSize">20dp</item>
-        <item name="android:layout_centerHorizontal">true</item>
+    <!-- TextViews and Button on the first screen-->
+    <style name="LoginElementSecondary" parent = "loginElementPrimary">
+<!--        <item name="android:textStyle">italic</item>-->
     </style>
+
+
 
 
 

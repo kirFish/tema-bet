@@ -7,20 +7,22 @@
     tools:context=".activity.Login">
 
     <RelativeLayout
-        style="@style/LoginMainStyle"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="-29dp">
+        android:paddingRight="130dp"
+        android:paddingLeft="130dp"
+        android:paddingTop="160dp"
+        >
 
         <TextView
-            style="@style/LoginSecondary"
+            style="@style/LoginElementSecondary"
             android:id="@+id/loginLabel"
 
             android:text="@string/login" />
 
         <EditText
-            style="@style/loginElement"
+            style="@style/loginElementPrimary"
             android:id="@+id/inputLogin"
             android:layout_below="@id/loginLabel"
             android:ems="10"
@@ -28,23 +30,28 @@
 
         <TextView
             android:id="@+id/passwordLabel"
-            style="@style/LoginSecondary"
+            style="@style/LoginElementSecondary"
             android:layout_below="@id/inputLogin"
             android:layout_marginTop="2dp"
             android:text="@string/passwordLabel" />
 
         <EditText
-            style="@style/loginElement"
+            style="@style/loginElementPrimary"
             android:id="@+id/inputPassword"
             android:layout_below="@id/passwordLabel"
             android:ems="10"
             android:inputType="textPassword" />
 
         <Button
-            style="@style/LoginSecondary"
             android:id="@+id/button"
+            style="@style/LoginElementSecondary"
             android:layout_below="@id/inputPassword"
-            android:text="@string/buttonLabel" />
+            android:text="@string/buttonLabel"
+            android:layout_marginTop="15dp"
+            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:background="@drawable/login_button"
+            android:textColor="@color/buttonText"/>
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
