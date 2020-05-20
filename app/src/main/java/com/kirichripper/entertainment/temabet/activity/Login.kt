@@ -12,11 +12,18 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+
     }
 
-    val CredintalsStatus = inputLogin.text.isEmpty() && inputPassword.text.isEmpty();
 
-    fun login(view: android.view.View) {
-        
-    }
- }
+//TODO:
+//Add onclick reaction which will ask if the credentials are correct
+// unnecessary garbage
+//
+//    val CredentialsStatus = inputLogin.text.isEmpty() && inputPassword.text.isEmpty();
+//
+//    fun login(view: android.view.View) {
+//
+//    }
+
+}
