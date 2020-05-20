@@ -22,6 +22,7 @@
             style="@style/loginElementPrimary"
             android:layout_below="@id/loginLabel"
             android:ems="10"
+            android:hint="@string/login_hint"
             android:inputType="text"
             android:maxLength="45" />
 
@@ -36,6 +37,7 @@
             android:id="@+id/inputPassword"
             style="@style/loginElementPrimary"
             android:layout_below="@id/passwordLabel"
+            android:hint="@string/password_hint"
             android:ems="10"
             android:inputType="textPassword" />
 
