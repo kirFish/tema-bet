@@ -9,5 +9,5 @@ data class ServiceInitMsg(
 
     val login: String,
 
-    val password: String,
+    val password: String
 ) : Parcelable
