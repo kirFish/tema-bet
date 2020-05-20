@@ -7,4 +7,5 @@
     <string name="login_hint">max 45</string>
     <string name="password_hint">more than 0</string>
 
+    <string name="serverUrl">127.0.0.1:8080</string>
 </resources>
