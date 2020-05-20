@@ -23,7 +23,8 @@
             android:id="@+id/inputLogin"
             android:layout_below="@id/loginLabel"
             android:ems="10"
-            android:inputType="text" />
+            android:inputType="text"
+            android:maxLength="45" />
 
         <TextView
             android:id="@+id/passwordLabel"
