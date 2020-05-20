@@ -9,15 +9,17 @@
     </style>
 
     <!--All the elements on the first screen-->
-    <style name="LoginMainStyle">
+    <style name="MainStyle">
+<!--        <item name="android:background">@color/defaultActivityBackground</item>-->
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:fontFamily">@font/cuprum_bold</item>
+        <item name="android:textColor">@color/textColor</item>
         <item name="android:textSize">25sp</item>
         <item name="android:layout_margin">10dp</item>
     </style>
 
     <!-- EditText on the first activity-->
-    <style name ="loginElementPrimary" parent = "LoginMainStyle">
+    <style name ="loginElementPrimary" parent = "MainStyle">
         <item name="android:padding">15dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
@@ -26,7 +28,7 @@
 
     <!-- TextViews and Button on the first screen-->
     <style name="LoginElementSecondary" parent = "loginElementPrimary">
-<!--        <item name="android:textStyle">italic</item>-->
+        <item name="android:textStyle">italic</item>
     </style>
 
 </resources>

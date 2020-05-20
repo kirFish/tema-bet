@@ -9,7 +9,7 @@
         android:id="@+id/mainLoginLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
+        android:background="@color/defaultActivityBackground"
         >
 
         <TextView
@@ -54,6 +54,8 @@
     </RelativeLayout>
 
     <RelativeLayout
+        style="@style/MainStyle"
+        android:background="@color/defaultActivityBackground"
         android:id="@+id/secondaryLoginLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
