@@ -1,5 +1,4 @@
 package com.kirichripper.entertainment.temabet.service
-//package com.example.temabet.service
 
 import android.annotation.SuppressLint
 import android.app.Service
@@ -13,7 +12,6 @@ import com.example.temabet.R
 import org.json.JSONObject
 import java.io.FileDescriptor
 import java.io.InputStreamReader
-//import sun.net.www.http.HttpClient
 import java.io.OutputStreamWriter
 import java.net.HttpURLConnection
 import java.net.URL
@@ -24,13 +22,21 @@ import java.security.MessageDigest
 
 class Data : Service() {
 
-    private var userId: Int? = null;
+    //private var userId: Int? = null;
 
     override fun onCreate() {
         super.onCreate()
 
     }
 
+    override fun onBind(intent: Intent?): IBinder? {
+        TODO("Not yet implemented")
+    }
+
+
+
+    //TUT POLNYI PIZDEC NAPISAL TEMA2
+    /*
     //This is where the intent from start service goes.
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         val supErrC = super.onStartCommand(intent, flags, startId) //error code
@@ -93,6 +99,8 @@ class Data : Service() {
         return START_STICKY
     }
 
+
+
     override fun onDestroy() {
         super.onDestroy()
     }
@@ -146,4 +154,7 @@ class Data : Service() {
     }
 
 }
+*/
 
+
+}
