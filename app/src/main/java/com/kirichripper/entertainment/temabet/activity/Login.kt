@@ -14,10 +14,10 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        //setting default color to red
-        inputLogin.highlightColor = R.color.editTextWrong
-        inputPassword.highlightColor = R.color.editTextWrong
-    }
+//        //setting default color to red
+//        inputLogin.highlightColor = R.color.editTextWrong
+//        inputPassword.highlightColor = R.color.editTextWrong
+   }
 
 
 //TODO:

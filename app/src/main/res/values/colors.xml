@@ -5,16 +5,15 @@
     <color name="colorAccent">#DA0303</color>
 
 
-    <!--Black theme of an Application-->
-    <color name="defaultActivityBackground">#575454</color>
+    <color name="defaultActivityBackground">#FFFFFF</color>
 
 
     <!--TextViews-->
-    <color name="textColor">#FF9100</color>
+    <color name="textColor">#100F0F</color>
 
 
     <!--Buttons-->
-    <color name="buttonPrimary">#FF9100</color>
+    <color name="buttonPrimary">#7E57C2</color>
     <color name="buttonText">#423E3E</color>
 
 

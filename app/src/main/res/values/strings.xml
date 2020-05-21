@@ -3,8 +3,8 @@
     <string name="app_name">TemaBet</string>
 
     <!--labels-->
-    <string name="login">Login:</string>
-    <string name="passwordLabel">Password:</string>
+    <string name="login">Login</string>
+    <string name="passwordLabel">Password</string>
     <string name="buttonLabel">Sign in</string>
 
     <!-- Hints-->

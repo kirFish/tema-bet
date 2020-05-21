@@ -14,7 +14,7 @@
 
         <TextView
             android:id="@+id/loginLabel"
-            style="@style/LoginElementSecondary"
+            style="@style/textViewPrimary"
             android:text="@string/login" />
 
         <EditText
@@ -27,7 +27,7 @@
 
         <TextView
             android:id="@+id/passwordLabel"
-            style="@style/LoginElementSecondary"
+            style="@style/textViewPrimary"
             android:layout_below="@id/inputLogin"
             android:layout_marginTop="2dp"
             android:text="@string/passwordLabel" />
@@ -42,7 +42,7 @@
 
         <Button
             android:id="@+id/signInButton"
-            style="@style/LoginElementSecondary"
+            style="@style/MainStyle"
             android:layout_width="150dp"
             android:layout_height="100dp"
             android:layout_below="@id/inputPassword"
