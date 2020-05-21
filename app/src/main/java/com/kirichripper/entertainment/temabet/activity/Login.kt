@@ -14,20 +14,21 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-//        //setting default color to red
-//        inputLogin.highlightColor = R.color.editTextWrong
-//        inputPassword.highlightColor = R.color.editTextWrong
-   }
+        startCredentialsCheck()
+
+    }
 
 
-//TODO:
-//Add onclick reaction which will ask if the credentials are correct
-// unnecessary garbage
-//
-//    val CredentialsStatus = inputLogin.text.isEmpty() && inputPassword.text.isEmpty();
-//
-//    fun login(view: android.view.View) {
-//
-//    }
+    private fun startCredentialsCheck() {
+
+    }
+
+    public fun startSignIn(view : android.view.View){
+
+
+        //this.startService()
+    }
+
+
 
 }

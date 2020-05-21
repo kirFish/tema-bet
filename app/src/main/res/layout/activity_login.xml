@@ -15,6 +15,7 @@
             android:id="@+id/inputLogin"
             style="@style/editTextPrimary"
             android:hint="@string/login_hint"
+            android:autofillHints="username"
             android:inputType="text"
             android:layout_marginTop="25dp"
         />
@@ -22,8 +23,9 @@
         <EditText
             android:id="@+id/inputPassword"
             style="@style/editTextPrimary"
-            android:layout_below="@id/inputLogin"
             android:hint="@string/password_hint"
+            android:layout_below="@id/inputLogin"
+            android:autofillHints="password"
             android:inputType="textPassword" />
 
         <Button
@@ -34,6 +36,7 @@
             android:layout_below="@id/inputPassword"
             android:layout_marginTop="25dp"
             android:background="@drawable/login_button"
+            android:onClick="startSignIn"
             android:text="@string/buttonLabel"
             android:textColor="@color/buttonText"
             />
