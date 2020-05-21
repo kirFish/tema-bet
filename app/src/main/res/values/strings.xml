@@ -12,5 +12,7 @@
     <string name="password_hint">more than 0</string>
 
 
-
+    <!-- ServerUrl and handlers endpoints-->
+    <string name="serverUrl">localhost:8080</string>
+    <string name="loginHandler">/user/login</string>
 </resources>
