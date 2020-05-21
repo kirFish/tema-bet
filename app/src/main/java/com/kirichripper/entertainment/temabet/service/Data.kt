@@ -1,3 +1,4 @@
+/*
 package com.example.temabet.service
 
 import android.annotation.SuppressLint
@@ -18,16 +19,17 @@ import java.security.MessageDigest
 
 
 class Data : Service() {
-    private var userId: Int? = null;
-//    class DataBinder : Binder() {
-//        override fun onTransact(code: Int, data: Parcel, reply: Parcel?, flags: Int): Boolean {
-//            return super.onTransact(code, data, reply, flags)
-//        }
-//
-//        override fun dump(fd: FileDescriptor, fout: PrintWriter, args: Array<out String>?) {
-//            super.dump(fd, fout, args)
-//        }
-//    }
+
+private var userId: Int? = null;
+    class DataBinder : Binder() {
+        override fun onTransact(code: Int, data: Parcel, reply: Parcel?, flags: Int): Boolean {
+            return super.onTransact(code, data, reply, flags)
+        }
+
+        override fun dump(fd: FileDescriptor, fout: PrintWriter, args: Array<out String>?) {
+            super.dump(fd, fout, args)
+        }
+    }
 
 
     override fun onCreate() {
@@ -99,4 +101,6 @@ class Data : Service() {
     override fun onBind(intent: Intent): IBinder {
         TODO("Return the communication channel to the service.")
     }
+
 }
+*/
