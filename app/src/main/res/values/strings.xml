@@ -8,8 +8,8 @@
     <string name="buttonLabel">Sign in</string>
 
     <!-- Hints-->
-    <string name="login_hint">max 45</string>
-    <string name="password_hint">more than 0</string>
+    <string name="login_hint">login</string>
+    <string name="password_hint">password</string>
 
 
     <!-- ServerUrl and handlers endpoints-->
