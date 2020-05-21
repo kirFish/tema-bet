@@ -39,12 +39,13 @@ class Data : Service() {
     /*
     //This is where the intent from start service goes.
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        val supErrC = super.onStartCommand(intent, flags, startId) //error code
+        /*val supErrC =*/ super.onStartCommand(intent, flags, startId) //error code
+
         //return supErrC
         //val init: ServiceInitMsg? = intent?.getParcelableExtra("serviceInit")
 
-        val Login: String? = intent?.getParcelableExtra("login")
-        val password: String? = intent?.getParcelableExtra("password")
+        val Login: String? = intent?.getStringExtra("login")
+        val password: String? = intent?.getStringExtra("password")
 
         var threadHandle = Thread {
             val url = URL(getString(R.string.serverUrl) + getString(R.string.loginHandler))
@@ -89,9 +90,6 @@ class Data : Service() {
                         //TODO: unexpected http code
                     }
                 };
-
-
-                //val respBody = JSONObject(ist)
             }
 
         }
