@@ -18,6 +18,6 @@
 
 
     <!-- EditText-->
-    <color name="editTextWrong">#FF5252</color>
-    <color name="editTextCorrect">#06D26F</color>
+    <color name="editTextWrong">#87EF5350</color>
+    <color name="editTextCorrect">#8806D26F</color>
 </resources>

@@ -41,8 +41,9 @@
     <!-- EditText on the first activity-->
     <style name="editTextPrimary" parent = "MainStyle">
         <item name = "android:layout_margin">25dp</item>
-        <item name ="android:ems">10</item>
-        <item name="android:maxLength">45</item>
+        <item name = "android:ems">10</item>
+        <item name = "android:background">@color/editTextWrong</item>
+        <item name = "android:maxLength">45</item>
     </style>
 
 
