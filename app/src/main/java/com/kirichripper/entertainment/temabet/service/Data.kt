@@ -1,10 +1,13 @@
 package com.example.temabet.service
 
+import android.annotation.SuppressLint
 import android.app.Service
 import android.content.Intent
 import android.os.IBinder
+import android.util.JsonReader
 import com.example.temabet.R
 import org.json.JSONObject
+import java.io.InputStreamReader
 //import sun.net.www.http.HttpClient
 import java.io.OutputStreamWriter
 import java.net.HttpURLConnection
@@ -13,7 +16,6 @@ import java.nio.charset.StandardCharsets
 import java.security.MessageDigest
 
 
-//const val adress = "127.0.0.1:8080"
 
 class Data : Service() {
     private var userId: Int? = null;
@@ -43,7 +45,7 @@ class Data : Service() {
         val password: String? = intent?.getParcelableExtra("password")
 
         var threadHandle = Thread {
-            val url = URL(getString(R.string.serverUrl))
+            val url = URL(getString(R.string.serverUrl) + getString(R.string.loginHandler))
 
             with(url.openConnection() as HttpURLConnection) {
                 requestMethod = "GET"
@@ -57,10 +59,32 @@ class Data : Service() {
                 wr.write(reqBody.toString())
                 wr.flush()
 
-                //TODO: process response, send it to UI thr.
+                val ist = inputStream
+                val code = responseCode
+
+                when (code) {
+                    404 -> {
+                        //TODO: No such user case
+                    }
+                    500 -> {
+                        //TODO: ISE
+                    }
+                    200 -> {
+                        val respBodyReader = JsonReader(InputStreamReader(ist))
+
+
+                    }
+                    else -> {
+                        //TODO: impossible
+                    }
+                };
+
+
+                //val respBody = JSONObject(ist)
             }
 
         }
+
 
     }
 

@@ -6,4 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".activity.Runs">
 
+    <LinearLayout
+        android:id="@+id/primaryRunsLayout"
+        style="@style/MainStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/secondaryRunsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/runsProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
