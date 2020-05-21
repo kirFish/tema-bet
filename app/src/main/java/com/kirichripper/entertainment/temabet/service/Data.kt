@@ -117,6 +117,7 @@ class Data : Service() {
 
             override fun queryLocalInterface(descriptor: String): IInterface? {
                 //TODO("Not yet implemented")
+                return null
             }
 
             override fun transact(code: Int, data: Parcel, reply: Parcel?, flags: Int): Boolean {
