@@ -4,6 +4,7 @@ package com.kirichripper.entertainment.temabet.service
 import android.annotation.SuppressLint
 import android.app.Service
 import android.content.Intent
+import android.os.Binder
 import android.os.IBinder
 import android.os.IInterface
 import android.os.Parcel
@@ -101,46 +102,47 @@ class Data : Service() {
     }
     //called ONCE, for getting IBinder handler
     override fun onBind(intent: Intent): IBinder {
-        return object: IBinder {
-            override fun getInterfaceDescriptor(): String? {
-                return "RunsSrv service"
-            }
-
-            override fun isBinderAlive(): Boolean {
-                //TODO: implement this in proper way
-                return true
-            }
-
-            override fun linkToDeath(recipient: IBinder.DeathRecipient, flags: Int) {
-                //??????
-            }
-
-            override fun queryLocalInterface(descriptor: String): IInterface? {
-                //TODO("Not yet implemented")
-                return null
-            }
-
-            override fun transact(code: Int, data: Parcel, reply: Parcel?, flags: Int): Boolean {
-                TODO("Not yet implemented")
-            }
-
-            override fun dumpAsync(fd: FileDescriptor, args: Array<out String>?) {
-                TODO("Not yet implemented")
-            }
-
-            override fun dump(fd: FileDescriptor, args: Array<out String>?) {
-                TODO("Not yet implemented")
-            }
-
-            override fun unlinkToDeath(recipient: IBinder.DeathRecipient, flags: Int): Boolean {
-                TODO("Not yet implemented")
-            }
-
-            override fun pingBinder(): Boolean {
-                TODO("Not yet implemented")
-            }
-
-        }
+            return Binder()
+//        return object: IBinder {
+//            override fun getInterfaceDescriptor(): String? {
+//                return "RunsSrv service"
+//            }
+//
+//            override fun isBinderAlive(): Boolean {
+//                //TODO: implement this in proper way
+//                return true
+//            }
+//
+//            override fun linkToDeath(recipient: IBinder.DeathRecipient, flags: Int) {
+//                //??????
+//            }
+//
+//            override fun queryLocalInterface(descriptor: String): IInterface? {
+//                //TODO("Not yet implemented")
+//                return null
+//            }
+//
+//            override fun transact(code: Int, data: Parcel, reply: Parcel?, flags: Int): Boolean {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun dumpAsync(fd: FileDescriptor, args: Array<out String>?) {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun dump(fd: FileDescriptor, args: Array<out String>?) {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun unlinkToDeath(recipient: IBinder.DeathRecipient, flags: Int): Boolean {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun pingBinder(): Boolean {
+//                TODO("Not yet implemented")
+//            }
+//
+//        }
     }
 
 }
