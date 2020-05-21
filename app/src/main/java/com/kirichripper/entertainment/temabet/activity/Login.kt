@@ -71,7 +71,6 @@ class Login : AppCompatActivity() {
     fun startSignIn(view : android.view.View){
 
 
-
         if(checkPassword() && checkLogin()){
 
             mainLoginLayout.visibility = View.INVISIBLE;
