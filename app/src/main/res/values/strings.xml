@@ -1,9 +1,14 @@
 <resources>
+
     <string name="app_name">TemaBet</string>
+
+    <!--labels-->
     <string name="login">Login:</string>
     <string name="passwordLabel">Password:</string>
     <string name="buttonLabel">Sign in</string>
+
+    <!-- Hints-->
     <string name="login_hint">max 45</string>
-    <string name="password_hint">pohui voobshche</string>
+    <string name="password_hint">more than 0</string>
 
 </resources>

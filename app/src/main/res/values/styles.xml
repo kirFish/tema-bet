@@ -1,32 +1,48 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Light application theme. -->
+    <style name="LightAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">#D2CDDB</item>
+        <item name="colorPrimaryDark">#FFEE58</item>
+        <item name="colorAccent">#66BB6A</item>
     </style>
 
+    <!-- Dark application theme. -->
+    <style name="DarkAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/defaultActivityBackground</item>
+        <item name="colorPrimaryDark">#4A148C</item>
+        <item name="colorAccent">#66BB6A</item>
+    </style>
+
+
+
     <!--All the elements on the first screen-->
-    <style name="LoginMainStyle">
+    <style name="MainStyle">
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:fontFamily">@font/cuprum_bold</item>
         <item name="android:textSize">25sp</item>
         <item name="android:layout_margin">10dp</item>
-    </style>
-
-    <!-- EditText on the first activity-->
-    <style name ="loginElementPrimary" parent = "LoginMainStyle">
-        <item name="android:padding">15dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
-<!--        <item name="android:cacheColorHint">@color/editTextWrong</item>-->
+    </style>
+
+    <!-- All the elements on the first screen -->
+    <style name ="loginElementPrimary" parent = "MainStyle">
+        <item name="android:padding">15dp</item>
+
+       <item name="android:cacheColorHint">@color/editTextWrong</item>
     </style>
 
     <!-- TextViews and Button on the first screen-->
     <style name="LoginElementSecondary" parent = "loginElementPrimary">
 <!--        <item name="android:textStyle">italic</item>-->
+    </style>
+
+    <!-- EditText on the first activity-->
+    <style name="editTextPrimary" parent = "loginElementPrimary">
+        <item name ="android:ems">10</item>
     </style>
 
 </resources>

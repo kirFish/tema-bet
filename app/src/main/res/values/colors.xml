@@ -6,14 +6,17 @@
 
 
     <!--Black theme of an Application-->
-    <color name="defaultActivityBackground">#C62B2927</color>
+    <color name="defaultActivityBackground">#575454</color>
+
 
     <!--TextViews-->
     <color name="textColor">#FF9100</color>
 
+
     <!--Buttons-->
     <color name="buttonPrimary">#FF9100</color>
     <color name="buttonText">#423E3E</color>
+
 
     <!-- EditText-->
     <color name="editTextWrong">#FF5252</color>
