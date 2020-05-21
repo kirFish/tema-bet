@@ -23,17 +23,7 @@ import java.security.MessageDigest
 
 class Data : Service() {
 
-private var userId: Int? = null;
-//    class DataBinder : Binder() {
-//        override fun onTransact(code: Int, data: Parcel, reply: Parcel?, flags: Int): Boolean {
-//            return super.onTransact(code, data, reply, flags)
-//        }
-//
-//        override fun dump(fd: FileDescriptor, fout: PrintWriter, args: Array<out String>?) {
-//            super.dump(fd, fout, args)
-//        }
-//    }
-
+    private var userId: Int? = null;
 
     override fun onCreate() {
         super.onCreate()
