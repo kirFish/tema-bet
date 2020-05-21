@@ -1,13 +1,16 @@
-/*
-package com.example.temabet.service
+package com.kirichripper.entertainment.temabet.service
+//package com.example.temabet.service
 
 import android.annotation.SuppressLint
 import android.app.Service
 import android.content.Intent
 import android.os.IBinder
+import android.os.IInterface
+import android.os.Parcel
 import android.util.JsonReader
 import com.example.temabet.R
 import org.json.JSONObject
+import java.io.FileDescriptor
 import java.io.InputStreamReader
 //import sun.net.www.http.HttpClient
 import java.io.OutputStreamWriter
@@ -21,15 +24,15 @@ import java.security.MessageDigest
 class Data : Service() {
 
 private var userId: Int? = null;
-    class DataBinder : Binder() {
-        override fun onTransact(code: Int, data: Parcel, reply: Parcel?, flags: Int): Boolean {
-            return super.onTransact(code, data, reply, flags)
-        }
-
-        override fun dump(fd: FileDescriptor, fout: PrintWriter, args: Array<out String>?) {
-            super.dump(fd, fout, args)
-        }
-    }
+//    class DataBinder : Binder() {
+//        override fun onTransact(code: Int, data: Parcel, reply: Parcel?, flags: Int): Boolean {
+//            return super.onTransact(code, data, reply, flags)
+//        }
+//
+//        override fun dump(fd: FileDescriptor, fout: PrintWriter, args: Array<out String>?) {
+//            super.dump(fd, fout, args)
+//        }
+//    }
 
 
     override fun onCreate() {
@@ -65,19 +68,28 @@ private var userId: Int? = null;
                 val code = responseCode
 
                 when (code) {
-                    404 -> {
-                        //TODO: No such user case
+                    403 -> {
+                        //TODO: Bad request
+
                     }
                     500 -> {
                         //TODO: ISE
                     }
                     200 -> {
                         val respBodyReader = JsonReader(InputStreamReader(ist))
+                        if (respBodyReader.nextName() == "id") {
+                            val id: Int? = respBodyReader.nextInt()
+                            userId = id!!
 
+                        } else {
+                            //TODO: malformed json response in Ok response
+
+
+                        }
 
                     }
                     else -> {
-                        //TODO: impossible
+                        //TODO: unexpected http code
                     }
                 };
 
@@ -87,7 +99,7 @@ private var userId: Int? = null;
 
         }
 
-
+        return START_STICKY
     }
 
     override fun onDestroy() {
@@ -99,8 +111,46 @@ private var userId: Int? = null;
     }
     //called ONCE, for getting IBinder handler
     override fun onBind(intent: Intent): IBinder {
-        TODO("Return the communication channel to the service.")
+        return object: IBinder {
+            override fun getInterfaceDescriptor(): String? {
+                return "RunsSrv service"
+            }
+
+            override fun isBinderAlive(): Boolean {
+                //TODO: implement this in proper way
+                return true
+            }
+
+            override fun linkToDeath(recipient: IBinder.DeathRecipient, flags: Int) {
+                //??????
+            }
+
+            override fun queryLocalInterface(descriptor: String): IInterface? {
+                //TODO("Not yet implemented")
+            }
+
+            override fun transact(code: Int, data: Parcel, reply: Parcel?, flags: Int): Boolean {
+                TODO("Not yet implemented")
+            }
+
+            override fun dumpAsync(fd: FileDescriptor, args: Array<out String>?) {
+                TODO("Not yet implemented")
+            }
+
+            override fun dump(fd: FileDescriptor, args: Array<out String>?) {
+                TODO("Not yet implemented")
+            }
+
+            override fun unlinkToDeath(recipient: IBinder.DeathRecipient, flags: Int): Boolean {
+                TODO("Not yet implemented")
+            }
+
+            override fun pingBinder(): Boolean {
+                TODO("Not yet implemented")
+            }
+
+        }
     }
 
 }
-*/
+
