@@ -5,7 +5,7 @@
     <style name="LightAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name = "colorPrimary">#D2CDDB</item>
-        <item name = "colorPrimaryDark">#543C5F</item>
+        <item name = "colorPrimaryDark">#E64A19</item>
         <item name = "colorAccent">#D32F2F</item>
     </style>
 
