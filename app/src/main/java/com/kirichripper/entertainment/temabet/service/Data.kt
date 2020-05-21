@@ -22,21 +22,14 @@ import java.security.MessageDigest
 
 class Data : Service() {
 
-    //private var userId: Int? = null;
+    private var userId: Int? = null;
 
     override fun onCreate() {
         super.onCreate()
 
     }
-
-    override fun onBind(intent: Intent?): IBinder? {
-        TODO("Not yet implemented")
-    }
-
-
-
     //TUT POLNYI PIZDEC NAPISAL TEMA2
-    /*
+
     //This is where the intent from start service goes.
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         /*val supErrC =*/ super.onStartCommand(intent, flags, startId) //error code
@@ -152,7 +145,6 @@ class Data : Service() {
     }
 
 }
-*/
 
 
-}
+
