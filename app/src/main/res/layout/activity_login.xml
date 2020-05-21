@@ -21,12 +21,9 @@
             android:id="@+id/inputLogin"
             style="@style/editTextPrimary"
             android:layout_below="@id/loginLabel"
-            android:ems="10"
             android:hint="@string/login_hint"
             android:inputType="text"
-            android:autofillHints="username"
-
-        android:maxLength="45" />
+        />
 
         <TextView
             android:id="@+id/passwordLabel"
@@ -35,12 +32,12 @@
             android:layout_marginTop="2dp"
             android:text="@string/passwordLabel" />
 
+
         <EditText
             android:id="@+id/inputPassword"
             style="@style/editTextPrimary"
             android:layout_below="@id/passwordLabel"
             android:hint="@string/password_hint"
-            android:autofillHints="password"
             android:inputType="textPassword" />
 
         <Button
