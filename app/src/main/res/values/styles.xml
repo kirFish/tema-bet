@@ -7,6 +7,7 @@
         <item name = "colorPrimary">#D2CDDB</item>
         <item name = "colorPrimaryDark">#E64A19</item>
         <item name = "colorAccent">#D32F2F</item>
+<!--        <color name = "lightActivityBackground">#FFFFFF</color>-->
     </style>
 
 
