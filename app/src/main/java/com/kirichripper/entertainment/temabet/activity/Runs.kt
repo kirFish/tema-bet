@@ -9,5 +9,9 @@ class Runs : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_runs)
+
+//        //ask service about data
+//        String
+//        initRunsList()
     }
 }
