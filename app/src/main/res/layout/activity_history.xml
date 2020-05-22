@@ -5,4 +5,28 @@
     android:layout_height="match_parent"
     tools:context="com.kirichripper.entertainment.temabet.activity.History">
 
+    <LinearLayout
+        android:id="@+id/primaryRunsLayout"
+        style="@style/PrimaryLayoutStyle"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RunsList"
+            android:layout_width="match_parent"
+
+            style="@style/MainStyle"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/secondaryRunsLayout"
+        style="@style/SecondaryLayoutStyle"
+        tools:ignore="MissingConstraints">
+
+        <ProgressBar
+            android:id="@+id/runsProgressBar"
+            style="@style/ProgressBar"/>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
