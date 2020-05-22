@@ -7,7 +7,7 @@ import android.os.Handler
 import android.view.View
 import android.widget.Toast
 import com.example.temabet.R
-import com.kirichripper.entertainment.temabet.service.Data
+import com.kirichripper.entertainment.temabet.activity.Runs
 import kotlinx.android.synthetic.main.activity_login.*
 
 class Login : AppCompatActivity() {
@@ -25,14 +25,14 @@ class Login : AppCompatActivity() {
     }
 
 
-    fun startSignIn(view : android.view.View){
+     fun startSignIn(view : android.view.View){
 
 
         if(checkPassword() && checkLogin()){
 
             //changed the view to progress bar
-            mainLoginLayout.visibility = View.INVISIBLE;
-            secondaryLoginLayout.visibility = View.VISIBLE;
+            mainLoginLayout.visibility = View.INVISIBLE
+            secondaryLoginLayout.visibility = View.VISIBLE
 
             //startService()
             //var responseFromServer = Data.startLogin(inputLogin.text, inputPassword.text)
@@ -65,16 +65,14 @@ class Login : AppCompatActivity() {
     private fun startCredentialsCheck() {
 
         //Because by default edit text contains zero
-        var passwordReady = false;
-        var loginReady = false;
-        var ifCredentialsReady = false;
+        var ifCredentialsReady = false
 
         class MyRunnable(var handler: Handler) : Runnable {
 
             override fun run() {
 
-                loginReady = checkLogin()
-                passwordReady = checkPassword()
+                var loginReady = checkLogin()
+                var passwordReady = checkPassword()
 
                 if (loginReady) {
                     inputLogin.setBackgroundColor(getColor(R.color.editTextCorrect))

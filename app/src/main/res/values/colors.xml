@@ -20,6 +20,6 @@
 
 
     <!-- EditText-->
-    <color name="editTextWrong">#87EF5350</color>
-    <color name="editTextCorrect">#8806D26F</color>
+    <color name="editTextWrong">#85EF5350</color>
+    <color name="editTextCorrect">#B0A5D6A7</color>
 </resources>

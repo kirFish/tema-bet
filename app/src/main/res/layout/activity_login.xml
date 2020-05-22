@@ -3,21 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/darkActivityBackground"
     tools:context=".activity.Login">
 
     <RelativeLayout
         android:id="@+id/mainLoginLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/darkActivityBackground"
+        style="@style/PrimaryLayoutStyle"
+        tools:ignore="MissingConstraints"
         >
+
         <EditText
             android:id="@+id/inputLogin"
             style="@style/editTextPrimary"
             android:hint="@string/login_hint"
             android:autofillHints="username"
             android:inputType="text"
-            android:layout_marginStart="25dp"
         />
 
         <EditText
@@ -30,35 +30,23 @@
 
         <Button
             android:id="@+id/signInButton"
-            style="@style/MainStyle"
-            android:layout_width="150dp"
-            android:layout_height="100dp"
+            style="@style/buttonPrimary"
             android:layout_below="@id/inputPassword"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/login_button"
             android:onClick="startSignIn"
             android:text="@string/buttonLabel"
-            android:textColor="@color/buttonText"
             />
     </RelativeLayout>
 
     <RelativeLayout
-        style="@style/MainStyle"
-        android:background="@color/darkActivityBackground"
         android:id="@+id/secondaryLoginLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="invisible"
+        style="@style/SecondaryLayoutStyle"
+        tools:ignore="MissingConstraints"
         >
 
         <ProgressBar
-
             android:id="@+id/progressBar"
-            android:layout_marginTop="190dp"
-            style="@android:style/Widget.ProgressBar.Large.Inverse"
-            android:layout_centerHorizontal = "true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_marginTop="200dp"
+            style = "@style/ProgressBar" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

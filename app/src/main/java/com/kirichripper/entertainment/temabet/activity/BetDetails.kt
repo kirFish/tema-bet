@@ -1,4 +1,4 @@
-package com.example.temabet.activity
+package com.kirichripper.entertainment.temabet.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
