@@ -5,7 +5,9 @@
     <color name="colorAccent">#DA0303</color>
 
 
-    <color name="defaultActivityBackground">#322F2F</color>
+    <color name="lightActivityBackground">#FFFFFF</color>
+    <color name="darkActivityBackground">#322F2F</color>
+
 
 
     <!--TextViews-->
