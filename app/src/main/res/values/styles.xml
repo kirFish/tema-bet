@@ -1,8 +1,6 @@
 <resources>
 
-
-    <!-- Light application theme. -->
-    <style name="LightAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name = "LightAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name = "colorPrimary">#D2CDDB</item>
         <item name = "colorPrimaryDark">#E64A19</item>
@@ -11,8 +9,7 @@
     </style>
 
 
-    <!-- Dark application theme. -->
-    <style name="DarkAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name = "DarkAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name = "colorPrimary">#353333</item>
         <item name = "colorPrimaryDark">#4A148C</item>
@@ -20,8 +17,7 @@
     </style>
 
 
-    <!--All the elements on the first screen-->
-    <style name="MainStyle">
+    <style name = "MainStyle">
         <item name = "android:layout_centerHorizontal">true</item>
         <item name = "android:fontFamily">@font/cuprum_bold</item>
         <item name = "android:textSize">30sp</item>
@@ -32,20 +28,48 @@
     </style>
 
 
-<!--    &lt;!&ndash; TextViews &ndash;&gt;-->
-<!--    <style name="textViewPrimary" parent = "MainStyle">-->
-<!--        <item name = "android:textStyle">italic</item>-->
-<!--        <item name = "android:textColor">@color/textColor</item>-->
-<!--    </style>-->
+    <style name = "GeneralLayoutStyle">
+        <item name = "android:layout_height">match_parent</item>
+        <item name = "android:layout_width">match_parent</item>
+        <item name = "android:background">@color/darkActivityBackground</item>
+    </style>
 
 
-    <!-- EditText on the first activity-->
-    <style name="editTextPrimary" parent = "MainStyle">
+    <style name = "PrimaryLayoutStyle" parent = "GeneralLayoutStyle">
+
+    </style>
+
+
+    <style name = "SecondaryLayoutStyle" parent = "GeneralLayoutStyle">
+        <item name ="android:visibility">invisible</item>
+    </style>
+
+
+    <style name = "editTextPrimary" parent = "MainStyle">
         <item name = "android:layout_margin">25dp</item>
         <item name = "android:ems">10</item>
         <item name = "android:background">@color/editTextWrong</item>
         <item name = "android:maxLength">45</item>
     </style>
 
+
+    <style name= "buttonPrimary" parent= "MainStyle">
+        <item name = "android:background">@drawable/login_button</item>
+        <item name = "android:layout_height">100dp</item>
+        <item name = "android:layout_width">150dp</item>
+        <item name = "android:textColor">@color/buttonText</item>
+        <item name = "android:layout_marginTop">25dp</item>
+    </style>
+
+
+    <style name = "ProgressBar" parent = "@android:style/Widget.ProgressBar.Large">
+        <item name = "android:layout_width">150dp</item>
+        <item name = "android:layout_height">150dp</item>
+        <item name = "android:animationResolution">1</item>
+        <item name= "android:indeterminate">true</item>
+<!--        <item name= "android:indeterminateTintMode">src_atop</item>-->
+<!--        <item name = "android:indeterminateTint">@color/colorPrimaryDark</item>-->
+        <item name = "android:layout_centerHorizontal">true</item>
+    </style>
 
 </resources>
