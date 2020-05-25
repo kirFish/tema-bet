@@ -6,8 +6,10 @@ import com.example.temabet.R
 
 class BetDetails : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bet_details)
+
     }
 }
