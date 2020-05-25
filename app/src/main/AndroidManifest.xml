@@ -21,7 +21,7 @@
         <activity android:name="com.kirichripper.entertainment.temabet.activity.History" />
         <activity android:name="com.kirichripper.entertainment.temabet.activity.BetDetails" />
         <activity android:name="com.kirichripper.entertainment.temabet.activity.Runs" />
-        <activity android:name=".activity.Login" >
+        <activity android:name="com.kirichripper.entertainment.temabet.activity.Login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
