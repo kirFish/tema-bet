@@ -2,7 +2,7 @@ package com.kirichripper.entertainment.temabet.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.temabet.R
+import com.kirichripper.entertainment.temabet.R
 
 class Runs : AppCompatActivity() {
 

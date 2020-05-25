@@ -6,8 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import android.widget.Toast
-import com.example.temabet.R
-import com.kirichripper.entertainment.temabet.activity.Runs
+import com.kirichripper.entertainment.temabet.R
 import kotlinx.android.synthetic.main.activity_login.*
 
 class Login : AppCompatActivity() {
