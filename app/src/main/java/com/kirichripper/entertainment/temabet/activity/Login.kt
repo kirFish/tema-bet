@@ -70,8 +70,8 @@ class Login : AppCompatActivity() {
 
             override fun run() {
 
-                var loginReady = checkLogin()
-                var passwordReady = checkPassword()
+                val loginReady = checkLogin()
+                val passwordReady = checkPassword()
 
                 if (loginReady) {
                     inputLogin.setBackgroundColor(getColor(R.color.editTextCorrect))

@@ -11,5 +11,6 @@ class BetDetails : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bet_details)
 
+
     }
 }

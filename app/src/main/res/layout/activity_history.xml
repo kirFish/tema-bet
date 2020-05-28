@@ -5,19 +5,25 @@
     android:layout_height="match_parent"
     tools:context="com.kirichripper.entertainment.temabet.activity.History">
 
-    <LinearLayout
-        android:id="@+id/primaryRunsLayout"
+    <ScrollView
         style="@style/PrimaryLayoutStyle"
-        android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/RunsList"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:id="@+id/primaryRunsLayout"
+            style="@style/PrimaryLayoutStyle"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
 
-            style="@style/MainStyle"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/historyList"
+                android:layout_width="match_parent"
 
-    </LinearLayout>
+                style="@style/MainStyle"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <RelativeLayout
 
