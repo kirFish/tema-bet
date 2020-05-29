@@ -9,7 +9,7 @@
     <string name="bet_details_label">TextView</string>
 
     <!-- Buttons-->
-    <string name="button_bet_name">Button</string>
+    <string name="button_bet_name">Bet</string>
     <string name="button_sign_in_name">Sign in</string>
 
     <!-- Image descriptions-->

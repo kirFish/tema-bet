@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/GeneralLayoutStyle"
     tools:context="com.kirichripper.entertainment.temabet.activity.BetDetails">
 
     <RelativeLayout
@@ -11,33 +9,33 @@
         style="@style/PrimaryLayoutStyle"
         tools:ignore="MissingConstraints">
 
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/horseImage"
+
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/horseRun"
+            android:contentDescription="@string/horse_image_description" />
 
         <EditText
             android:id="@+id/editText2"
             style="@style/EditTextPrimary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
             android:layout_below="@id/horseNumberInput"
-
             android:inputType="numberSigned" />
 
         <EditText
             android:id="@+id/horseNumberInput"
             style="@style/EditTextPrimary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
             android:layout_below="@id/horsesList"
             android:inputType="number" />
 
         <TextView
             android:id="@+id/textView"
             style="@style/MainStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_below="@id/horseImage"
-
             android:text="@string/bet_details_label" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -47,17 +45,7 @@
             android:layout_below="@id/textView"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
-
-
             />
-
-        <ImageView
-            android:id="@+id/horseImage"
-            android:layout_width="300dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="70dp"
-            android:layout_marginStart="50dp"
-            android:contentDescription="@string/horse_image_description" />
 
         <TextView
             android:id="@+id/horseInputLabel"
@@ -74,11 +62,9 @@
         <Button
             style="@style/ButtonPrimary"
             android:layout_below="@id/editText2"
-
             android:id="@+id/betButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="@string/button_bet_name" />
+
     </RelativeLayout>
 
     <RelativeLayout
