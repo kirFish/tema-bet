@@ -1,52 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/darkActivityBackground"
+    style="@style/GeneralLayoutStyle"
     tools:context=".activity.Login">
 
+
+    <!-- this layout is here to enable work with centerInParent attribute-->
     <RelativeLayout
-        android:id="@+id/mainLoginLayout"
-        style="@style/PrimaryLayoutStyle"
-        tools:ignore="MissingConstraints"
-        >
+        style="@style/GeneralLayoutStyle"
+        tools:ignore="MissingConstraints">
 
-        <EditText
-            android:id="@+id/inputLogin"
-            style="@style/editTextPrimary"
-            android:hint="@string/login_hint"
-            android:autofillHints="username"
-            android:inputType="text"
-        />
+        <RelativeLayout
+            android:id="@+id/mainLoginLayout"
+            style="@style/PrimaryLayoutStyle"
+            android:layout_centerInParent="true"
+            tools:ignore="MissingConstraints">
 
-        <EditText
-            android:id="@+id/inputPassword"
-            style="@style/editTextPrimary"
-            android:hint="@string/password_hint"
-            android:layout_below="@id/inputLogin"
-            android:autofillHints="password"
-            android:inputType="textPassword" />
+            <EditText
+                android:id="@+id/inputLogin"
+                style="@style/EditTextPrimary"
+                android:autofillHints="username"
+                android:hint="@string/login_hint"
+                android:inputType="text" />
 
-        <Button
-            android:id="@+id/signInButton"
-            style="@style/buttonPrimary"
-            android:layout_below="@id/inputPassword"
-            android:onClick="startSignIn"
-            android:text="@string/buttonLabel"
-            />
-    </RelativeLayout>
+            <EditText
+                android:id="@+id/inputPassword"
+                style="@style/EditTextPrimary"
+                android:layout_below="@id/inputLogin"
+                android:autofillHints="password"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword" />
 
-    <RelativeLayout
-        android:id="@+id/secondaryLoginLayout"
-        style="@style/SecondaryLayoutStyle"
-        tools:ignore="MissingConstraints"
-        >
+            <Button
+                android:id="@+id/signInButton"
+                style="@style/ButtonPrimary"
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:layout_marginTop="200dp"
-            style = "@style/ProgressBar" />
+                android:layout_below="@id/inputPassword"
+                android:onClick="startSignIn"
+                android:text="@string/button_sign_in_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/secondaryLoginLayout"
+            style="@style/SecondaryLayoutStyle"
+            tools:ignore="MissingConstraints">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/ProgressBar"
+                android:layout_marginTop="200dp" />
+        </RelativeLayout>
+
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

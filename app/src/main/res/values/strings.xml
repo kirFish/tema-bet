@@ -3,9 +3,17 @@
     <string name="app_name">TemaBet</string>
 
     <!--labels-->
-    <string name="login">Login</string>
-    <string name="passwordLabel">Password</string>
-    <string name="buttonLabel">Sign in</string>
+    <string name="password_label">Password</string>
+    <string name="amount_input_label">Amount in hryvnia</string>
+    <string name="horse_input_label">Horse#</string>
+    <string name="bet_details_label">TextView</string>
+
+    <!-- Buttons-->
+    <string name="button_bet_name">Button</string>
+    <string name="button_sign_in_name">Sign in</string>
+
+    <!-- Image descriptions-->
+    <string name="horse_image_description">horse image</string>
 
     <!-- Hints-->
     <string name="login_hint">login</string>
@@ -15,4 +23,7 @@
     <!-- ServerUrl and handlers endpoints-->
     <string name="serverUrl">localhost:8080</string>
     <string name="loginHandler">/user/login</string>
+
+
+
 </resources>

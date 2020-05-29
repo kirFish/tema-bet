@@ -7,28 +7,28 @@
     tools:context="com.kirichripper.entertainment.temabet.activity.BetDetails">
 
     <RelativeLayout
-        android:id="@+id/mainLoginLayout"
+        android:id="@+id/mainBetDetailsLayout"
         style="@style/PrimaryLayoutStyle"
         tools:ignore="MissingConstraints">
 
 
         <EditText
             android:id="@+id/editText2"
-            style="@style/editTextPrimary"
+            style="@style/EditTextPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_below="@id/editText"
+
+            android:layout_below="@id/horseNumberInput"
 
             android:inputType="numberSigned" />
 
         <EditText
-            android:id="@+id/editText"
-            style="@style/editTextPrimary"
+            android:id="@+id/horseNumberInput"
+            style="@style/EditTextPrimary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:layout_below="@id/hui"
+            android:layout_below="@id/horsesList"
             android:inputType="number" />
 
         <TextView
@@ -36,12 +36,12 @@
             style="@style/MainStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imageView"
-            android:textColor="@color/colorPrimary"
-            android:text="TextView" />
+            android:layout_below="@id/horseImage"
+
+            android:text="@string/bet_details_label" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/hui"
+            android:id="@+id/horsesList"
             android:layout_width="200dp"
             android:layout_height="100dp"
             android:layout_below="@id/textView"
@@ -49,46 +49,40 @@
             android:layout_marginRight="50dp"
 
 
-            android:background="@color/colorPrimary"/>
+            />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/horseImage"
             android:layout_width="300dp"
             android:layout_height="70dp"
             android:layout_marginTop="70dp"
-            android:layout_marginLeft="50dp"
-            app:srcCompat="@drawable/ic_launcher_background" />
+            android:layout_marginStart="50dp"
+            android:contentDescription="@string/horse_image_description" />
+
+        <TextView
+            android:id="@+id/horseInputLabel"
+            style="@style/MainStyle"
+            android:layout_below="@id/horsesList"
+            android:text="@string/horse_input_label" />
 
         <TextView
             style="@style/MainStyle"
-            android:id="@+id/textView3"
-            android:layout_below="@id/hui"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Horse#" />
-
-        <TextView
-            style="@style/MainStyle"
-            android:id="@+id/textView2"
-            android:layout_below="@id/textView3"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Amount in hryvnia" />
+            android:id="@+id/amountInputLabel"
+            android:layout_below="@id/horseInputLabel"
+            android:text="@string/amount_input_label" />
 
         <Button
-            style="@style/buttonPrimary"
+            style="@style/ButtonPrimary"
             android:layout_below="@id/editText2"
 
-            android:id="@+id/button"
+            android:id="@+id/betButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="@string/button_bet_name" />
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/secondaryLoginLayout"
+        android:id="@+id/secondaryBetDetailsLayout"
         style="@style/SecondaryLayoutStyle"
         tools:ignore="MissingConstraints">
 
