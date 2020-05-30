@@ -17,7 +17,7 @@
             android:layout_height="100dp"
             android:layout_marginTop="50dp"
             android:layout_marginStart="50dp"
-            android:src="@drawable/horseRun"
+            android:src="@drawable/horse_run"
             android:contentDescription="@string/horse_image_description" />
 
 
@@ -50,8 +50,8 @@
             android:id="@+id/horseNumberInput"
             style="@style/EditTextPrimary"
             android:layout_below="@id/horsesList"
-<!--            android:layout_alignRight="@+id/horseInputLabel"-->
-            android:inputType="number" />
+            android:inputType="number"/>
+        <!--            android:layout_alignRight="@+id/horseInputLabel"-->
 
 
         <TextView
