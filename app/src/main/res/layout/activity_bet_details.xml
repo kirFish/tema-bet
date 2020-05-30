@@ -13,24 +13,24 @@
         <ImageView
             android:id="@+id/horseImage"
             android:layout_centerHorizontal="true"
-            android:layout_width="400dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginStart="50dp"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
             android:src="@drawable/horse_run"
             android:contentDescription="@string/horse_image_description" />
 
 
         <TextView
             android:id="@+id/dateAndTimeLabel"
-            style="@style/MainStyle"
+            style="@style/TextViewPrimary"
+            android:layout_centerHorizontal="true"
             android:layout_below="@id/horseImage"
             android:text="@string/bet_details_label" />
 
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/horsesList"
-            android:layout_width="200dp"
+            style="@style/MainStyle"
+            android:layout_width="300dp"
             android:layout_height="100dp"
             android:layout_below="@id/dateAndTimeLabel"
             android:layout_marginLeft="50dp"
@@ -40,23 +40,26 @@
 
         <TextView
             android:id="@+id/horseInputLabel"
-            style="@style/MainStyle"
+            style="@style/TextViewPrimary"
             android:layout_below="@id/horsesList"
-
             android:text="@string/horse_input_label" />
 
 
         <EditText
             android:id="@+id/horseNumberInput"
             style="@style/EditTextPrimary"
+            android:autofillHints="number"
+            android:hint="@string/horse_number_hint"
             android:layout_below="@id/horsesList"
-            android:inputType="number"/>
-        <!--            android:layout_alignRight="@+id/horseInputLabel"-->
+            android:layout_toEndOf="@id/horseInputLabel"
+            android:textColor="@color/textColor"
+            android:inputType="number"
+             />
 
 
         <TextView
             android:id="@+id/amountInputLabel"
-            style="@style/MainStyle"
+            style="@style/TextViewPrimary"
             android:layout_below="@id/horseInputLabel"
             android:text="@string/amount_input_label" />
 
@@ -64,7 +67,11 @@
         <EditText
             android:id="@+id/amountInput"
             style="@style/EditTextPrimary"
+            android:autofillHints="number"
+            android:hint="@string/bet_amount_hint"
+            android:layout_toEndOf="@id/amountInputLabel"
             android:layout_below="@id/horseNumberInput"
+            android:textColor="@color/textColor"
             android:inputType="numberSigned" />
 
 
@@ -72,7 +79,8 @@
             style="@style/ButtonPrimary"
             android:layout_below="@id/amountInput"
             android:id="@+id/betButton"
-            android:text="@string/button_bet_name" />
+            android:text="@string/button_bet_name"
+            android:background="@drawable/bet_button"/>
 
     </RelativeLayout>
 
@@ -82,7 +90,7 @@
         tools:ignore="MissingConstraints">
 
         <ProgressBar
-            android:id="@+id/progressBar"
+            android:id="@+id/betDetailsProgressBar"
             style="@style/ProgressBar"
             android:layout_marginTop="200dp" />
 

@@ -34,11 +34,6 @@ class Login : AppCompatActivity() {
             mainLoginLayout.visibility = View.INVISIBLE
             secondaryLoginLayout.visibility = View.VISIBLE
 
-
-            val password = inputPassword.text
-            val login = inputLogin.text
-
-
             //var responseFromServer = Data.startLogin(inputLogin.text, inputPassword.text)
 
             // for testing cos service is not ready yet to work with API
@@ -68,9 +63,6 @@ class Login : AppCompatActivity() {
 
     private fun startCredentialsCheck() {
 
-        //Because by default edit text contains zero
-        var ifCredentialsReady = false
-
         class MyRunnable(var handler: Handler) : Runnable {
 
             override fun run() {
@@ -89,10 +81,6 @@ class Login : AppCompatActivity() {
                     inputPassword.setBackgroundColor(getColor(R.color.editTextCorrect))
                 }else{
                     inputPassword.setBackgroundColor(getColor(R.color.editTextWrong))
-                }
-
-                if (loginReady && passwordReady) {
-                    ifCredentialsReady = true
                 }
 
                 handler.postDelayed(this, 500)

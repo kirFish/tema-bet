@@ -34,7 +34,6 @@
             <Button
                 android:id="@+id/signInButton"
                 style="@style/ButtonPrimary"
-
                 android:layout_below="@id/inputPassword"
                 android:onClick="startSignIn"
                 android:text="@string/button_sign_in_name" />

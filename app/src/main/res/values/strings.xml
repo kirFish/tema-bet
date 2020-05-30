@@ -4,9 +4,9 @@
 
     <!--labels-->
     <string name="password_label">Password</string>
-    <string name="amount_input_label">Amount in hryvnia</string>
-    <string name="horse_input_label">Horse#</string>
-    <string name="bet_details_label">TextView</string>
+    <string name="amount_input_label">Amount ₴‎</string>
+    <string name="horse_input_label">Horse #</string>
+    <string name="bet_details_label">Похуй когда</string>
 
     <!-- Buttons-->
     <string name="button_bet_name">Bet</string>
@@ -16,8 +16,10 @@
     <string name="horse_image_description">horse image</string>
 
     <!-- Hints-->
-    <string name="login_hint">login</string>
+    <string name="login_hint">username</string>
     <string name="password_hint">password</string>
+    <string name="bet_amount_hint">999123</string>
+    <string name="horse_number_hint">6</string>
 
 
     <!-- ServerUrl and handlers endpoints-->

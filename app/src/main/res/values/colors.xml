@@ -11,7 +11,7 @@
 
 
     <!--TextViews-->
-    <color name="textColor">#100F0F</color>
+    <color name="textColor">#C9FF7043</color>
 
 
     <!--Buttons-->
@@ -20,6 +20,7 @@
 
 
     <!-- EditText-->
+    <color name="editTextDefaultBackground">#EE534D4D</color>
     <color name="editTextWrong">#85EF5350</color>
     <color name="editTextCorrect">#B0A5D6A7</color>
 </resources>
