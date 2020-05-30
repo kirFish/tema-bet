@@ -27,13 +27,18 @@ class Login : AppCompatActivity() {
      fun startSignIn(view : android.view.View){
 
 
+
         if(checkPassword() && checkLogin()){
 
             //changed the view to progress bar
             mainLoginLayout.visibility = View.INVISIBLE
             secondaryLoginLayout.visibility = View.VISIBLE
 
-            //startService()
+
+            val password = inputPassword.text
+            val login = inputLogin.text
+
+
             //var responseFromServer = Data.startLogin(inputLogin.text, inputPassword.text)
 
             // for testing cos service is not ready yet to work with API

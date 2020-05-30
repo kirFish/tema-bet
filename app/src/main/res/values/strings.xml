@@ -21,7 +21,7 @@
 
 
     <!-- ServerUrl and handlers endpoints-->
-    <string name="serverUrl">localhost:8080</string>
+    <string name="serverUrl">192.168.0.108:8080</string>
     <string name="loginHandler">/user/login</string>
 
 
