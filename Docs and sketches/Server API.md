@@ -87,12 +87,14 @@ Returns:
 		pub RunsDone: i32, //Skoko zabegov begala
 	}
 ```
+
 ```
 	pub struct UserLoginPayload {
 		pub login: String,
 		pub passwh: Vec<u8>,
 	}
 ```
+
 ```
 	pub struct RunRegisterPayload {
 		pub login: String,
@@ -103,6 +105,7 @@ Returns:
 		pub competitors: Vec<i32>,
 	}
 ```
+
 ```
 	pub struct BetMakePayload {
 		pub login: String,
@@ -112,6 +115,7 @@ Returns:
 		pub on_id_horse: i32,
 	}
 ```
+
 ```
 	pub struct Run {
 		pub ID: i32,
@@ -121,6 +125,7 @@ Returns:
 		pub CompetLFK: Option<i32>
 	}
 ```
+
 ```
 	pub struct Bet {
 		pub ID: i32,

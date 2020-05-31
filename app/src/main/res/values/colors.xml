@@ -11,7 +11,8 @@
 
 
     <!--TextViews-->
-    <color name="textColor">#C9FF7043</color>
+    <color name="primaryTextColor">#C9FF7043</color>
+    <color name="listTextColor">#FF7043</color>
 
 
     <!--Buttons-->

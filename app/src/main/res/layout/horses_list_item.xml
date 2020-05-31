@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PrimaryLayoutStyle">
+
+    <RelativeLayout
+        style="@style/PrimaryLayoutStyle"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/horseNumberText"
+            style="@style/TextViewSmall"
+            android:text="@string/default_horse_number" />
+
+        <TextView
+            android:id="@+id/horseNameText"
+            style="@style/TextViewSmall"
+            android:layout_toEndOf="@id/horseNumberText"
+            android:text="@string/default_horse_name" />
+
+        <TextView
+            android:id="@+id/horseWinRateText"
+            style="@style/TextViewSmall"
+            android:layout_toEndOf="@id/horseNameText"
+            android:text="@string/default_horse_winRate" />
+
+        <TextView
+            android:id="@+id/coefficientText"
+            style="@style/TextViewSmall"
+            android:layout_toEndOf="@id/horseWinRateText"
+            android:text="@string/default_coefficient" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

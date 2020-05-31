@@ -42,7 +42,7 @@ class Login : AppCompatActivity() {
             //If response is true then the user is logged in
             if(responseFromServer){
 
-                val intent = Intent(this, Runs::class.java)
+                val intent = Intent(this, BetDetails::class.java)
                 startActivity(intent)
             }else{
                 Toast.makeText(applicationContext,"Incorrect login or password ",Toast.LENGTH_LONG).show()

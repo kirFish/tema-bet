@@ -46,25 +46,50 @@
         <item name ="android:visibility">invisible</item>
     </style>
 
-
-    <style name = "TextViewPrimary">
-        <item name = "android:layout_margin">30dp</item>
+    <style name = "TextView">
         <item name = "android:fontFamily">@font/cuprum_bold</item>
-        <item name = "android:textSize">30sp</item>
-        <item name = "android:textColor">@color/textColor</item>
+        <item name = "android:textColor">@color/primaryTextColor</item>
         <item name = "android:layout_height">wrap_content</item>
         <item name = "android:layout_width">wrap_content</item>
     </style>
 
+    <style name = "TextViewHuge" parent = "TextView">
+        <item name = "android:layout_margin">30dp</item>
+        <item name = "android:textSize">30sp</item>
+    </style>
 
-    <style name = "EditTextPrimary" parent = "MainStyle">
-        <item name = "android:layout_margin">20dp</item>
-        <item name = "android:ems">10</item>
+
+    <style name = "TextViewMedium" parent = "TextView">
+        <item name = "android:layout_margin">15dp</item>
+        <item name = "android:textSize">27sp</item>
+    </style>
+
+
+    <style name = "TextViewSmall" parent = "TextView">
+        <item name = "android:layout_margin">6dp</item>
+        <item name = "android:textSize">20sp</item>
+    </style>
+
+
+    <style name = "EditText" parent = "MainStyle">
         <item name = "android:layout_centerHorizontal">false</item>
         <item name = "android:background">@color/editTextDefaultBackground</item>
+    </style>
+
+
+    <style name = "EditTextHuge" parent = "EditText">
+        <item name = "android:layout_margin">20dp</item>
+        <item name = "android:ems">10</item>
         <item name = "android:maxLength">45</item>
         <item name = "android:padding">8dp</item>
+    </style>
 
+
+    <style name = "EditTextSmall" parent = "EditText">
+        <item name = "android:layout_margin">10dp</item>
+        <item name = "android:ems">3</item>
+        <item name = "android:maxLength">10</item>
+        <item name = "android:padding">3dp</item>
     </style>
 
 

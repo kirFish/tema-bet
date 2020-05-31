@@ -6,7 +6,7 @@
 
     <RelativeLayout
         android:id="@+id/mainBetDetailsLayout"
-        style="@style/PrimaryLayoutStyle"
+        style="@style/GeneralLayoutStyle"
         tools:ignore="MissingConstraints">
 
 
@@ -21,68 +21,92 @@
 
         <TextView
             android:id="@+id/dateAndTimeLabel"
-            style="@style/TextViewPrimary"
+            style="@style/TextViewHuge"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/horseImage"
             android:text="@string/bet_details_label" />
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/horsesList"
-            style="@style/MainStyle"
-            android:layout_width="300dp"
-            android:layout_height="100dp"
+        <ScrollView
+            android:id="@+id/horsesListContainer"
             android:layout_below="@id/dateAndTimeLabel"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/horsesList"
+                style="@style/MainStyle" />
+        </ScrollView>
 
 
-        <TextView
-            android:id="@+id/horseInputLabel"
-            style="@style/TextViewPrimary"
-            android:layout_below="@id/horsesList"
-            android:text="@string/horse_input_label" />
+        <RelativeLayout
+            android:id="@+id/inputBlock"
+            style="@style/PrimaryLayoutStyle"
+            android:layout_below="@id/horsesListContainer"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/horseInputLabel"
+                style="@style/TextViewMedium"
+                android:layout_marginStart="50dp"
+                android:text="@string/horse_input_label" />
+
+            <EditText
+                android:id="@+id/horseNumberInput"
+                style="@style/EditTextSmall"
+                android:layout_toEndOf="@id/horseInputLabel"
+                android:autofillHints="number"
+                android:ems="1"
+                android:hint="@string/horse_number_hint"
+                android:inputType="number"
+                android:textColor="@color/primaryTextColor" />
+
+            <TextView
+                android:id="@+id/amountInputLabel"
+                style="@style/TextViewMedium"
+                android:layout_below="@id/horseInputLabel"
+
+                android:text="@string/amount_input_label" />
 
 
-        <EditText
-            android:id="@+id/horseNumberInput"
-            style="@style/EditTextPrimary"
-            android:autofillHints="number"
-            android:hint="@string/horse_number_hint"
-            android:layout_below="@id/horsesList"
-            android:layout_toEndOf="@id/horseInputLabel"
-            android:textColor="@color/textColor"
-            android:inputType="number"
-             />
+            <EditText
+                android:id="@+id/amountInput"
+                style="@style/EditTextSmall"
+                android:layout_below="@id/horseNumberInput"
+                android:layout_toEndOf="@id/amountInputLabel"
+                android:autofillHints="number"
+                android:hint="@string/bet_amount_hint"
+                android:inputType="numberSigned"
+                android:textColor="@color/primaryTextColor" />
 
 
-        <TextView
-            android:id="@+id/amountInputLabel"
-            style="@style/TextViewPrimary"
-            android:layout_below="@id/horseInputLabel"
-            android:text="@string/amount_input_label" />
+            <TextView
+                android:id="@+id/hryvniaSymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/horseNumberInput"
+                android:layout_toEndOf="@id/amountInput"
+                android:text="@string/hryvnia_symbol"
+                android:textColor="@color/primaryTextColor"
+                android:paddingTop="6dp"
+                android:paddingStart="10dp"
+                android:textSize="40sp"
+                tools:ignore="RtlSymmetry" />
 
-
-        <EditText
-            android:id="@+id/amountInput"
-            style="@style/EditTextPrimary"
-            android:autofillHints="number"
-            android:hint="@string/bet_amount_hint"
-            android:layout_toEndOf="@id/amountInputLabel"
-            android:layout_below="@id/horseNumberInput"
-            android:textColor="@color/textColor"
-            android:inputType="numberSigned" />
+        </RelativeLayout>
 
 
         <Button
-            style="@style/ButtonPrimary"
-            android:layout_below="@id/amountInput"
             android:id="@+id/betButton"
+            style="@style/ButtonPrimary"
+            android:layout_below="@id/inputBlock"
             android:text="@string/button_bet_name"
             android:background="@drawable/bet_button"/>
 
+
     </RelativeLayout>
+
 
     <RelativeLayout
         android:id="@+id/secondaryBetDetailsLayout"

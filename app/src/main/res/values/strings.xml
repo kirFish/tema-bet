@@ -4,9 +4,9 @@
 
     <!--labels-->
     <string name="password_label">Password</string>
-    <string name="amount_input_label">Amount ₴‎</string>
-    <string name="horse_input_label">Horse #</string>
-    <string name="bet_details_label">Похуй когда</string>
+    <string name="amount_input_label">Amount:‎</string>
+    <string name="horse_input_label">Horse number:</string>
+    <string name="bet_details_label">Some day and some time </string>
 
     <!-- Buttons-->
     <string name="button_bet_name">Bet</string>
@@ -26,6 +26,12 @@
     <string name="serverUrl">192.168.0.108:8080</string>
     <string name="loginHandler">/user/login</string>
 
+    <!-- list items default values-->
+    <string name="default_horse_number">1</string>
+    <string name="default_coefficient">1.5x</string>
+    <string name="default_horse_name">Horse Name</string>
+    <string name="default_horse_winRate">0.65%</string>
+    <string name="hryvnia_symbol">₴‎</string>
 
 
 </resources>
