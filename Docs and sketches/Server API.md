@@ -87,14 +87,12 @@ Returns:
 		pub RunsDone: i32, //Skoko zabegov begala
 	}
 ```
-
 ```
 	pub struct UserLoginPayload {
 		pub login: String,
 		pub passwh: Vec<u8>,
 	}
 ```
-
 ```
 	pub struct RunRegisterPayload {
 		pub login: String,
@@ -105,27 +103,25 @@ Returns:
 		pub competitors: Vec<i32>,
 	}
 ```
-
 ```
-	pub struct BetMakePayload {
+pub struct BetMakePayload {
 		pub login: String,
-		pub passwh: Vec<u8>,
+		pub passwh: String,
 		pub on_id_run: i32,
 		pub money: f64,
 		pub on_id_horse: i32,
+    pub expected_win_rate: f64,
 	}
 ```
-
 ```
 	pub struct Run {
 		pub ID: i32,
 		pub Date: Option<chrono::NaiveDate>,
 		pub Place: Option<String>,
 		pub Winner: Option<i32>, //Loshad chto pobedila
-		pub CompetLFK: Option<i32>
+		pub HorsesList: List<(HorseId,win_rate)>
 	}
 ```
-
 ```
 	pub struct Bet {
 		pub ID: i32,
