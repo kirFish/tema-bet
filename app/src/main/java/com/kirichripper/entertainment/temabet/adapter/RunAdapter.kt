@@ -10,7 +10,7 @@ import com.kirichripper.entertainment.temabet.R
 import com.kirichripper.entertainment.temabet.data.Run
 import kotlinx.android.synthetic.main.runs_list_item.view.*
 
-class RunAdapter(private val RunsList: List<Run> ,private val context: Context)  : RecyclerView.Adapter<RunAdapter.RunViewHolder>() {
+class RunAdapter(private val RunsList: List<Run> , private val context: Context)  : RecyclerView.Adapter<RunAdapter.RunViewHolder>() {
 
     class RunViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var dateAndTimeText = itemView.dateAndTimeText!!

@@ -27,6 +27,7 @@ class HorseAdapter(val horseList : List<Horse>) :
         return BetDetailsViewHolder(view)
     }
 
+
     override fun onBindViewHolder(holder: BetDetailsViewHolder, position: Int) {
         val currentHorse = horseList[position]
 
@@ -35,6 +36,7 @@ class HorseAdapter(val horseList : List<Horse>) :
         holder.winRate.text = currentHorse.winRate.toString() + "%"
         holder.coefficient.text = currentHorse.coefficient.toString()
     }
+
 
     override fun getItemCount(): Int {
         return horseList.size

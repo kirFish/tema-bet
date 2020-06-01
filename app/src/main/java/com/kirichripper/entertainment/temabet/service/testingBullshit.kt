@@ -3,6 +3,8 @@ package com.kirichripper.entertainment.temabet.service
 import com.kirichripper.entertainment.temabet.data.Horse
 import com.kirichripper.entertainment.temabet.data.Run
 
+
+//to test list with horses, in future this will be replaced by data from the request to server
 fun initHorsesList(): List<Horse>{
     val horse1 = Horse(1,"John","Tema",12, 0.5,1.2,1213)
     val horse2 = Horse(2,"John Wick","Tema2",13, 0.56,1.2,2343)
@@ -16,6 +18,8 @@ fun initHorsesList(): List<Horse>{
     return listOf(horse1,horse2,horse3,horse4,horse5,horse6,horse7,horse8)
 }
 
+
+//to test list with runs, in future this will be replaced by data from the request to server
 fun initRunList(): List<Run>{
     val run1 = Run(12342,"19.12.2054","Bakaievka",initHorsesList())
     val run2 = Run(123452,"19.12.2054","Bakaievka",initHorsesList())

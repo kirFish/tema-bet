@@ -2,6 +2,7 @@ package com.kirichripper.entertainment.temabet.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kirichripper.entertainment.temabet.R
 import com.kirichripper.entertainment.temabet.adapter.RunAdapter
@@ -21,7 +22,11 @@ class Runs : AppCompatActivity() {
     private fun initRunsList() {
 
         runsList.setHasFixedSize(true)
-        runsList.layoutManager = LinearLayoutManager(applicationContext)
+        val layoutManager = LinearLayoutManager(applicationContext)
+        runsList.layoutManager = layoutManager
+        val dividerItemDecoration = DividerItemDecoration(runsList.context, layoutManager.orientation)
+        dividerItemDecoration.setDrawable(applicationContext.resources.getDrawable(R.drawable.divider_item_decoration))
+        runsList.addItemDecoration(dividerItemDecoration)
         runsList.adapter = RunAdapter(initRunList(), this)
 
 

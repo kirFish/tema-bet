@@ -8,6 +8,9 @@
     <color name="lightActivityBackground">#FFFFFF</color>
     <color name="darkActivityBackground">#322F2F</color>
 
+    <!-- item decorator-->
+    <color name="listDivider">#FFFFFF</color>
+
 
 
     <!--TextViews-->
