@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PrimaryLayoutStyle">
+    <RelativeLayout
+
+        style="@style/PrimaryLayoutStyle"
+        android:layout_width="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/dateAndTimeText"
+            style="@style/TextViewSmall"
+            android:text="@string/default_time" />
+
+        <TextView
+            android:id="@+id/placeText"
+            android:layout_below="@id/dateAndTimeText"
+            style="@style/TextViewMedium"
+            android:layout_centerHorizontal="true"
+            android:text="@string/default_place" />
+
+        <TextView
+            android:id="@+id/raceNumberText"
+            android:layout_alignParentEnd="true"
+            style="@style/TextViewSmall"
+            android:text="@string/default_race_number" />
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/horsesRunList"
+
+                android:layout_below="@id/placeText"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                style="@style/PrimaryLayoutStyle" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

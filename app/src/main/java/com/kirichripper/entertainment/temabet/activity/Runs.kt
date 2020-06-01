@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.kirichripper.entertainment.temabet.R
+import com.kirichripper.entertainment.temabet.adapter.RunAdapter
+import com.kirichripper.entertainment.temabet.service.initRunList
 import kotlinx.android.synthetic.main.activity_runs.*
 
 class Runs : AppCompatActivity() {
@@ -18,12 +20,9 @@ class Runs : AppCompatActivity() {
 
     private fun initRunsList() {
 
-        //don't want extendable view
         runsList.setHasFixedSize(true)
-
-        //just like list in one column
         runsList.layoutManager = LinearLayoutManager(applicationContext)
-
+        runsList.adapter = RunAdapter(initRunList(), this)
 
 
     }

@@ -31,7 +31,10 @@
     <string name="default_coefficient">1.5x</string>
     <string name="default_horse_name">Horse Name</string>
     <string name="default_horse_winRate">0.65%</string>
-    <string name="hryvnia_symbol">₴‎</string>
+    <string name="default_race_number">race number</string>
+    <string name="default_place">somewhere</string>
+    <string name="default_time">sometime</string>
 
+    <string name="hryvnia_symbol">₴‎</string>
 
 </resources>

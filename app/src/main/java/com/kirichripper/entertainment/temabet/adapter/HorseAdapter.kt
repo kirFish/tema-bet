@@ -10,15 +10,15 @@ import com.kirichripper.entertainment.temabet.data.Horse
 import kotlinx.android.synthetic.main.horses_list_item.view.*
 
 
-class BetDetailsAdapter(val horseList : List<Horse>) :
-    RecyclerView.Adapter<BetDetailsAdapter.BetDetailsViewHolder>() {
+class HorseAdapter(val horseList : List<Horse>) :
+    RecyclerView.Adapter<HorseAdapter.BetDetailsViewHolder>() {
 
 
     class BetDetailsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var horseRaceNumber: TextView = itemView.horseNumberText
-        var horseName: TextView = itemView.horseNameText
-        var coefficient: TextView = itemView.coefficientText
-        var winRate : TextView = itemView.horseWinRateText
+        var horseRaceNumber: TextView = itemView.horseNumberText!!
+        var horseName: TextView = itemView.horseNameText!!
+        var coefficient: TextView = itemView.coefficientText!!
+        var winRate : TextView = itemView.horseWinRateText!!
     }
 
 
