@@ -7,7 +7,6 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/runCardContainer"
         style="@style/CardViewDefault"
-        android:layout_width="match_parent"
         android:layout_height="200dp"
         tools:ignore="MissingConstraints" >
 
