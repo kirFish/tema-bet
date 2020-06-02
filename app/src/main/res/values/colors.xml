@@ -6,7 +6,7 @@
 
 
     <color name="lightActivityBackground">#FFFFFF</color>
-    <color name="darkActivityBackground">#322F2F</color>
+    <color name="darkActivityBackground">#474443</color>
 
     <!-- item decorator-->
     <color name="listDivider">#FFFFFF</color>
@@ -14,7 +14,7 @@
 
 
     <!--TextViews-->
-    <color name="primaryTextColor">#C9FF7043</color>
+    <color name="primaryTextColor">#ee6060</color>
     <color name="listTextColor">#FF7043</color>
 
 
@@ -27,4 +27,8 @@
     <color name="editTextDefaultBackground">#EE534D4D</color>
     <color name="editTextWrong">#85EF5350</color>
     <color name="editTextCorrect">#B0A5D6A7</color>
+
+    <color name="cardBackground">#cec5bf</color>
+    <color name="cardTextColor">#ee6060</color>
+
 </resources>

@@ -24,9 +24,9 @@ class Runs : AppCompatActivity() {
         runsList.setHasFixedSize(true)
         val layoutManager = LinearLayoutManager(applicationContext)
         runsList.layoutManager = layoutManager
-        val dividerItemDecoration = DividerItemDecoration(runsList.context, layoutManager.orientation)
-        dividerItemDecoration.setDrawable(applicationContext.resources.getDrawable(R.drawable.divider_item_decoration))
-        runsList.addItemDecoration(dividerItemDecoration)
+//        val dividerItemDecoration = DividerItemDecoration(runsList.context, layoutManager.orientation)
+//        dividerItemDecoration.setDrawable(applicationContext.resources.getDrawable(R.drawable.divider_item_decoration))
+//        runsList.addItemDecoration(dividerItemDecoration)
         runsList.adapter = RunAdapter(initRunList(), this)
 
 

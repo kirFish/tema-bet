@@ -6,6 +6,7 @@
 
     <RelativeLayout
         style="@style/PrimaryLayoutStyle"
+        android:background="@color/cardBackground"
         tools:ignore="MissingConstraints">
 
         <TextView
@@ -16,6 +17,7 @@
         <TextView
             android:id="@+id/horseNameText"
             style="@style/TextViewSmall"
+            android:layout_width="120dp"
             android:layout_toEndOf="@id/horseNumberText"
             android:text="@string/default_horse_name" />
 
@@ -23,6 +25,7 @@
             android:id="@+id/horseWinRateText"
             style="@style/TextViewSmall"
             android:layout_toEndOf="@id/horseNameText"
+            android:layout_width="55dp"
             android:text="@string/default_horse_winRate" />
 
         <TextView

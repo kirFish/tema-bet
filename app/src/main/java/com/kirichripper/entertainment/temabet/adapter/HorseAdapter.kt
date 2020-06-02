@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.res.TypedArrayUtils.getString
 import androidx.recyclerview.widget.RecyclerView
 import com.kirichripper.entertainment.temabet.R
 import com.kirichripper.entertainment.temabet.data.Horse
@@ -34,7 +35,7 @@ class HorseAdapter(val horseList : List<Horse>) :
         holder.horseRaceNumber.text = "#" + (position+1).toString()
         holder.horseName.text = currentHorse.name
         holder.winRate.text = currentHorse.winRate.toString() + "%"
-        holder.coefficient.text = currentHorse.coefficient.toString()
+        holder.coefficient.text = currentHorse.coefficient.toString() + "x"
     }
 
 
