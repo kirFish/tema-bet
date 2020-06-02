@@ -32,15 +32,14 @@
     <string name="default_horse_name">Horse Name</string>
     <string name="default_horse_winRate">0.65%</string>
     <string name="default_race_number">race number</string>
+    <string name="default_race_id">#12312</string>
     <string name="default_place">somewhere</string>
-    <string name="default_time">sometime</string>
-
-<!--    <string name="race_number"><b>#</b> %1$i</string>-->
-    <string name="horse_race_number"><b>#</b> %1$d</string>
-    <!-- still don't know how to add % to a string resource so the second arg is string-->
-    <string name="win_rate">%1$d %2$s</string>
-    <string name="coefficient">%1$d <b>x</b></string>
+    <string name="default_time">Sometime</string>
+    <string name="default_winner">Tema2</string>
+    <string name="default_money_change">+1000$</string>
 
     <string name="hryvnia_symbol">₴‎</string>
+
+
 
 </resources>

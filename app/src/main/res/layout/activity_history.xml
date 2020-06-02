@@ -27,7 +27,7 @@
     <RelativeLayout
 
         android:id="@+id/secondaryRunsLayout"
-        style="@style/SecondaryLayoutStyle"
+        style="@style/ProgressBarLayoutStyle"
         tools:ignore="MissingConstraints">
 
         <ProgressBar

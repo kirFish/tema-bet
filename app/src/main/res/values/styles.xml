@@ -1,5 +1,6 @@
 <resources>
 
+    <!-- APP THEMES-->
     <style name = "LightAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name = "colorPrimary">#D2CDDB</item>
@@ -7,7 +8,6 @@
         <item name = "colorAccent">#D32F2F</item>
 <!--        <color name = "lightActivityBackground">#FFFFFF</color>-->
     </style>
-
 
     <style name = "DarkAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
@@ -17,6 +17,7 @@
     </style>
 
 
+    <!-- Layouts and containers-->
     <style name = "MainStyle">
         <item name = "android:layout_centerHorizontal">true</item>
         <item name = "android:fontFamily">@font/cuprum_bold</item>
@@ -27,13 +28,11 @@
 
     </style>
 
-
     <style name = "GeneralLayoutStyle">
         <item name = "android:layout_height">match_parent</item>
         <item name = "android:layout_width">match_parent</item>
         <item name = "android:background">@color/darkActivityBackground</item>
     </style>
-
 
     <style name = "PrimaryLayoutStyle" parent = "GeneralLayoutStyle">
         <item name = "android:layout_height">wrap_content</item>
@@ -41,12 +40,25 @@
 
     </style>
 
-
-    <style name = "SecondaryLayoutStyle" parent = "GeneralLayoutStyle">
+    <style name = "ProgressBarLayoutStyle" parent = "GeneralLayoutStyle">
         <item name ="android:visibility">invisible</item>
     </style>
 
+    <style name = "CardLayoutStyle" parent = "PrimaryLayoutStyle">
+        <item name = "android:background">@color/cardBackground</item>
+        <item name = "android:layout_width">match_parent</item>
+        <item name = "android:layout_margin">20dp</item>
+    </style>
 
+    <style name = "CardViewDefault" parent = "CardView">
+        <item name ="cardCornerRadius">20dp</item>
+        <item name ="cardElevation">5dp</item>
+        <item name ="cardUseCompatPadding">true</item>
+        <item name ="cardBackgroundColor">@color/cardBackground</item>
+    </style>
+
+
+    <!-- TextView -->
     <style name = "TextView">
         <item name = "android:fontFamily">@font/cuprum_bold</item>
         <item name = "android:textColor">@color/primaryTextColor</item>
@@ -54,6 +66,15 @@
         <item name = "android:layout_width">wrap_content</item>
     </style>
 
+    <style name = "TextViewSmall" parent = "TextView">
+        <item name = "android:layout_margin">6dp</item>
+        <item name = "android:textSize">20sp</item>
+    </style>
+
+    <style name = "TextViewMedium" parent = "TextView">
+        <item name = "android:layout_margin">15dp</item>
+        <item name = "android:textSize">27sp</item>
+    </style>
 
     <style name = "TextViewHuge" parent = "TextView">
         <item name = "android:layout_margin">30dp</item>
@@ -61,23 +82,18 @@
     </style>
 
 
-    <style name = "TextViewMedium" parent = "TextView">
-        <item name = "android:layout_margin">15dp</item>
-        <item name = "android:textSize">27sp</item>
-    </style>
-
-
-    <style name = "TextViewSmall" parent = "TextView">
-        <item name = "android:layout_margin">6dp</item>
-        <item name = "android:textSize">20sp</item>
-    </style>
-
-
+    <!-- EditText -->
     <style name = "EditText" parent = "MainStyle">
         <item name = "android:layout_centerHorizontal">false</item>
         <item name = "android:background">@color/editTextDefaultBackground</item>
     </style>
 
+    <style name = "EditTextSmall" parent = "EditText">
+        <item name = "android:layout_margin">10dp</item>
+        <item name = "android:ems">3</item>
+        <item name = "android:maxLength">10</item>
+        <item name = "android:padding">3dp</item>
+    </style>
 
     <style name = "EditTextHuge" parent = "EditText">
         <item name = "android:layout_margin">20dp</item>
@@ -87,15 +103,8 @@
     </style>
 
 
-    <style name = "EditTextSmall" parent = "EditText">
-        <item name = "android:layout_margin">10dp</item>
-        <item name = "android:ems">3</item>
-        <item name = "android:maxLength">10</item>
-        <item name = "android:padding">3dp</item>
-    </style>
-
-
-    <style name= "ButtonPrimary" parent= "MainStyle">
+    <!--Buttons-->
+    <style name= "ButtonPrimary" parent = "MainStyle">
         <item name = "android:background">@drawable/login_button</item>
         <item name = "android:layout_height">100dp</item>
         <item name = "android:layout_width">150dp</item>
@@ -104,6 +113,7 @@
     </style>
 
 
+    <!-- Other-->
     <style name = "ProgressBar" parent = "@android:style/Widget.ProgressBar.Large">
         <item name = "android:layout_width">150dp</item>
         <item name = "android:layout_height">150dp</item>
@@ -113,6 +123,5 @@
 <!--        <item name = "android:indeterminateTint">@color/colorPrimaryDark</item>-->
         <item name = "android:layout_centerHorizontal">true</item>
     </style>
-
 
 </resources>

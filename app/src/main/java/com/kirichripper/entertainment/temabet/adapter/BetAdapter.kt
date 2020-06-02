@@ -3,20 +3,15 @@ package com.kirichripper.entertainment.temabet.adapter
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.kirichripper.entertainment.temabet.data.Bet
 
-class HistoryAdapter : RecyclerView.Adapter<RunAdapter.RunViewHolder>(){
+class BetAdapter(private val betList: List<Bet>) : RecyclerView.Adapter<RunAdapter.RunViewHolder>(){
+
 
     class HistoryViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-
-
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RunAdapter.RunViewHolder {
-        TODO("Not yet implemented")
-    }
-
-    override fun getItemCount(): Int {
         TODO("Not yet implemented")
     }
 
@@ -24,4 +19,7 @@ class HistoryAdapter : RecyclerView.Adapter<RunAdapter.RunViewHolder>(){
         TODO("Not yet implemented")
     }
 
+    override fun getItemCount(): Int {
+        return betList.size
+    }
 }

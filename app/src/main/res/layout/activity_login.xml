@@ -41,7 +41,7 @@
 
         <RelativeLayout
             android:id="@+id/secondaryLoginLayout"
-            style="@style/SecondaryLayoutStyle"
+            style="@style/ProgressBarLayoutStyle"
             tools:ignore="MissingConstraints">
 
             <ProgressBar
