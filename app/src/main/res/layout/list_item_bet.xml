@@ -22,19 +22,23 @@
             <TextView
                 android:id="@+id/winnerText"
                 style="@style/TextViewMedium"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
                 android:text="@string/default_winner" />
 
             <TextView
                 android:id="@+id/historyDateAndTimeLabel"
+                android:paddingTop="20dp"
                 android:layout_centerHorizontal="true"
                 style="@style/TextViewMedium"
                 android:text="@string/default_time" />
 
             <TextView
                 android:id="@+id/historyPlace"
-                android:layout_centerHorizontal="true"
-                style="@style/TextViewMedium"
-                android:text="@string/default_time" />
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                style="@style/TextViewSmall"
+                android:text="@string/default_place" />
 
             <TextView
                 android:id="@+id/moneyChangeText"

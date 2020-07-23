@@ -9,7 +9,7 @@
         tools:ignore="MissingConstraints">
 
         <LinearLayout
-            android:id="@+id/primaryRunsLayout"
+            android:id="@+id/primaryHistoryLayout"
             style="@style/PrimaryLayoutStyle"
             android:orientation="vertical"
             tools:ignore="MissingConstraints">
@@ -26,7 +26,7 @@
 
     <RelativeLayout
 
-        android:id="@+id/secondaryRunsLayout"
+        android:id="@+id/secondaryHistoryLayout"
         style="@style/ProgressBarLayoutStyle"
         tools:ignore="MissingConstraints">
 
